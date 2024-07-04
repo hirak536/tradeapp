@@ -2,28 +2,16 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading App</title>
-    <link rel="manifest" href="/manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(function (registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                }).catch(function (error) {
-                    console.log('Service Worker registration failed:', error);
-                });
-        }
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- TOP SECTION START -->
+
     <div>
         <button class="butt" id="auth">Authenticate</button>
+
         <div class="mess" id="message"></div>
         <br> <br>
         <div class="selector">
@@ -32,32 +20,45 @@
                 <option value="NIFTY">NIFTY</option>
                 <option value="FINNIFTY">FINNIFTY</option>
             </select>
-            <div id="apiResponse"></div>
+            <div id="apiResponse">
+            </div>
             <br><br>
             <label> Date
                 <input type="text" id="dte" />
             </label>
         </div>
     </div>
+
     <!-- TOP SECTION END -->
 
     <!-- AUTH START-->
+
     <div>
         <script src="auth.js"></script>
         <script src="step.js"></script>
         <script src="otp.js"></script>
         <script src="valid.js"></script>
     </div>
+
     <!-- AUTH END-->
+
     <br><br>
+
     <!-- ORDER SECTION START -->
+
     <div>
+
         <!-- CE SECTION START -->
+
         <div>
+
             <!-- CE CSS START -->
+
             <div>
                 <br><br>
-                <div class="tit">CE</div>
+                <div class="tit">
+                    CE
+                </div>
                 <br>
                 <label> Quantity
                     <input type="text" id="ceq" class="labl" />
@@ -72,30 +73,41 @@
                 <label>Selling Price
                     <input type="text" id="cesprc" class="labl" />
                 </label><br><br>
+
                 <button class="butt" id="check">CHECK</button>
                 <script src="orderstatus.js"></script>
             </div>
+            .
+            <!-- CE CSS END -->
+
             <br><br>
+
             <!-- CE ORDER START -->
+
             <div>
                 <!-- ---------------------------------------Buying Start Order----------------------------------------- -->
                 <button class="butt" id="cebuy">BUY</button>
                 <script src="cebuy.js"></script>
+
                 <button class="butt" id="cemkt">BUYATMKT</button>
                 <script src="cebuyatmkt.js"></script>
                 <!-- ---------------------------------------Buying Stop Order----------------------------------------- -->
+
                 <!-- ---------------------------------------Sell Start Order at MKT----------------------------------------- -->
                 <button class="butt" id="cesellmkt">SELL_AT_MKT</button>
                 <script src="cesellmkt.js"></script>
                 <!-- ---------------------------------------Sell End Order at MKT----------------------------------------- -->
+
                 <!-- ---------------------------------------Sell Start Order at Value----------------------------------------- -->
                 <button class="butt" id="cesell">SELL</button>
                 <script src="cesell.js"></script>
                 <!-- ---------------------------------------Sell Start Order at Value----------------------------------------- -->
+
                 <!-- ---------------------------------------Sell Start Order at 1----------------------------------------- -->
                 <button class="butt" id="cesellpone">SELL_AT_ONE</button>
                 <script src="cesellpone.js"></script>
                 <!-- ---------------------------------------Sell End Order at 1----------------------------------------- -->
+
                 <!-- ---------------------------------------Sell Start Order at TWO----------------------------------------- -->
                 <button class="butt" id="cesellptwo">SELL TWO</button>
                 <script src="cesellptwo.js"></script>
@@ -104,19 +116,29 @@
                 <button class="butt" id="cesellpthree">SELL THREE</button>
                 <script src="cesellpthree.js"></script>
                 <!-- ---------------------------------------Sell Start Order at Value----------------------------------------- -->
+
                 <!-- ---------------------------------------Sell Start Order at TWO----------------------------------------- -->
                 <button class="butt" id="cesellpfour">SELL FOUR</button>
                 <script src="cesellpfour.js"></script>
                 <!-- ---------------------------------------Sell Start Order at Value----------------------------------------- -->
                 <br><br>
             </div>
+
             <!-- CE ORDER END -->
+
         </div>
+
         <!-- CE SECTION END -->
+
         <!-- PE SECTION START -->
+
+
         <!-- PE SECTION END -->
+
     </div>
+
     <!-- ORDER SECTION END -->
+
 </body>
 
 </html>
