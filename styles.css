@@ -72,16 +72,3 @@
   font-style: italic;
   text-transform: uppercase;
 }
-
-@media (max-width: 600px) {
-  .butt,
-  .labl {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .selector {
-    display: flex;
-    flex-direction: column;
-  }
-}
