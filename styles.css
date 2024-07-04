@@ -1,0 +1,87 @@
+.selector {
+  text-align: center;
+}
+
+.butt {
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  border-radius: 53px;
+  background-color: rgb(87, 81, 163);
+  border-color: inherit;
+  margin-left: 9px;
+}
+
+.input {
+  border-radius: 10px;
+}
+
+.mess {
+  font-family: cursive;
+  font-size: small;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.tit {
+  margin-left: 200px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.vl {
+  border-left: 1px solid rgb(0, 0, 0);
+  height: 1px;
+  margin-left: 1px;
+}
+
+.cesec {
+  width: 49.8%;
+  float: left;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.pe {
+  margin-left: 704px;
+  margin-top: -175px;
+}
+
+.txt {
+  border-radius: 10px;
+  border-width: thin;
+  height: 21px;
+}
+
+.labl {
+  border-radius: 10px;
+  border-width: thin;
+  height: 21px;
+  width: 150px;
+}
+.message {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(87, 81, 163);
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .butt,
+  .labl {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .selector {
+    display: flex;
+    flex-direction: column;
+  }
+}
